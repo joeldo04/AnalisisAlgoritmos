@@ -2,8 +2,6 @@
 
 ## Asignatura: **Análisis de Algoritmos**
 
-Implementación de los algoritmos **Kruskal** y **Dijkstra** usando Java, programación orientada a objetos y modelo de capas.
-
 El programa trabaja con archivos planos `.txt`, lee un grafo no dirigido para Kruskal y un grafo dirigido para Dijkstra. Luego genera el resultado y lo guarda en un archivo de salida.
 
 
