@@ -45,49 +45,6 @@ archivo.escribirArchivo(
 | Persistencia | `persistencia` | `ArchivoGrafo` | Lee los archivos `.txt` y escribe el resultado final.             |
 | Presentación | `Presentar`    | `Presentar`    | Ejecuta el programa y muestra el resultado por consola.           |
 
-## Código principal
-
-```java
-package Presentar;
-
-import clases.Grafo;
-import logica.LogDijkstra;
-import logica.LogKruskal;
-import persistencia.ArchivoGrafo;
-
-public class Presentar {
-
-    public static void main(String[] args) throws Exception {
-
-        ArchivoGrafo archivo = new ArchivoGrafo();
-
-        Grafo grafoKruskal = archivo.leerGrafo(
-                "C:/Users/jcvei/OneDrive/Escritorio/4 CICLO COMPUTACION/AnalisisAlgoritmos/Grafos/grafo_no_dirigido.txt",
-                true
-        );
-
-        Grafo grafoDijkstra = archivo.leerGrafo(
-                "C:/Users/jcvei/OneDrive/Escritorio/4 CICLO COMPUTACION/AnalisisAlgoritmos/Grafos/grafo_dirigido.txt",
-                false
-        );
-
-        LogKruskal logKruskal = new LogKruskal();
-        LogDijkstra logDijkstra = new LogDijkstra();
-
-        String resultadoKruskal = logKruskal.obtenerArbol(grafoKruskal);
-        String resultadoDijkstra = logDijkstra.obtenerCaminos(grafoDijkstra, 1);
-
-        String resultado = resultadoKruskal + "\n\n" + resultadoDijkstra;
-
-        archivo.escribirArchivo(
-                "C:/Users/jcvei/OneDrive/Escritorio/4 CICLO COMPUTACION/AnalisisAlgoritmos/Grafos/resultado.txt",
-                resultado
-        );
-
-        System.out.println(resultado);
-    }
-}
-```
 
 ## Archivos utilizados
 
@@ -111,7 +68,7 @@ Dijkstra se usa para encontrar las distancias mínimas desde un vértice inicial
 
 En este caso, el algoritmo inicia desde el vértice `1`. Se van revisando los vértices con menor distancia encontrada y se actualizan los caminos cuando aparece una distancia menor.
 
-Para esto se usan arreglos simples:
+Para esto se usan arreglos:
 
 | Arreglo     | Función                                               |
 | ----------- | ----------------------------------------------------- |
