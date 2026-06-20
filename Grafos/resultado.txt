@@ -1,0 +1,28 @@
+RESULTADO KRUSKAL
+
+Aristas escogidas:
+2 - 3 peso 1
+3 - 4 peso 2
+1 - 2 peso 3
+3 - 5 peso 6
+
+Costo total del arbol de recubrimiento minimo: 12
+
+
+RESULTADO DIJKSTRA
+Vertice inicial: 1
+
+Aristas escogidas:
+3 -> 2 peso 4
+1 -> 3 peso 3
+2 -> 4 peso 2
+3 -> 5 peso 2
+
+Costo total del arbol generado: 11
+
+Distancias minimas:
+1 -> 1 = 0
+1 -> 2 = 7
+1 -> 3 = 3
+1 -> 4 = 9
+1 -> 5 = 5
