@@ -13,12 +13,12 @@ public class Presentar {
 
         Grafo grafoKruskal = archivo.leerGrafo(
                 "C:/Users/jcvei/OneDrive/Escritorio/4 CICLO COMPUTACION/AnalisisAlgoritmos/Grafos/grafo_no_dirigido.txt",
-                false
+                true
         );
 
         Grafo grafoDijkstra = archivo.leerGrafo(
                 "C:/Users/jcvei/OneDrive/Escritorio/4 CICLO COMPUTACION/AnalisisAlgoritmos/Grafos/grafo_dirigido.txt",
-                true
+                false
         );
 
         LogKruskal logKruskal = new LogKruskal();
